@@ -245,7 +245,8 @@ const Process = () => {
                         </span>
                         <h6 className="font-bold text-gray-900 mb-1">填写申请表</h6>
                         <p className="text-sm text-gray-600">
-                          下载并填写 <a href="https://www.ndls.ie/images/Documents/Forms/169030%20RSA%20Foreign%20Licence%20(Reduced%20EDT)%201305_Web_HR.pdf" target="_blank" rel="noopener noreferrer" className="text-emerald-600 underline hover:text-emerald-700 font-medium">Reduced EDT 申请表</a>。
+                          下载并填写 <a href="https://www.ndls.ie/images/Documents/Forms/20250120_Reduced_EDT_Application_Form_Jan_2025WEB.pdf" target="_blank" rel="noopener noreferrer" className="text-emerald-600 underline hover:text-emerald-700 font-medium">Reduced EDT 申请表</a>。
+                          下载并填写 <a href="https://www.ndls.ie/images/Documents/Forms/169030%20RSA%20Foreign%20Licence%20(Reduced%20EDT)%201305_Web_HR.pdf" target="_blank" rel="noopener noreferrer" className="text-emerald-600 underline hover:text-emerald-700 font-medium">RSA_Foreign_Licence说明</a>。
                         </p>
                       </li>
                       <li className="ml-6 relative">
