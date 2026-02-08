@@ -69,7 +69,7 @@
     npm run deploy
     ```
 
-> **注意**：本项目已配置 `vite.config.ts` 中的 `base: './'` 和 `HashRouter`，这确保了在 GitHub Pages 等静态托管服务上刷新页面不会出现 404 错误，且无需手动配置子路径。
+> **注意**：本项目已配置 `vite.config.ts` 中的 `base: './'` 和 `HashRouter`，这确保了在 GitHub Pages 等静态托管服务上刷新页面不会出现 404 错误，且无需手动配置子路径。 
 
 ## 📄 许可证
 
