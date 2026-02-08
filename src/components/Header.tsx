@@ -20,18 +20,20 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="bg-white/80 backdrop-blur-md shadow-soft sticky top-0 z-50 border-b border-gray-100/50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center">
-              <Car className="h-8 w-8 text-green-600" />
-              <span className="ml-2 text-xl font-bold text-gray-800">爱尔兰驾考通</span>
+            <Link to="/" className="flex-shrink-0 flex items-center group">
+              <div className="bg-emerald-100 p-2 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                <Car className="h-6 w-6 text-emerald-600" />
+              </div>
+              <span className="ml-3 text-xl font-bold text-gray-800 tracking-tight">爱尔兰驾考通</span>
             </Link>
           </div>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
               item.external ? (
                 <a
@@ -39,7 +41,7 @@ const Header = () => {
                   href={item.path}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  className="text-gray-600 hover:text-emerald-600 hover:bg-emerald-50 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300"
                 >
                   {item.name}
                 </a>
@@ -47,7 +49,7 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  className="text-gray-600 hover:text-emerald-600 hover:bg-emerald-50 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300"
                 >
                   {item.name}
                 </Link>
@@ -59,7 +61,7 @@ const Header = () => {
           <div className="flex items-center md:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500"
+              className="inline-flex items-center justify-center p-2 rounded-xl text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500 transition-colors"
             >
               <span className="sr-only">Open main menu</span>
               {isMenuOpen ? (
@@ -74,8 +76,8 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-gray-100 shadow-soft-lg absolute w-full left-0">
+          <div className="px-4 pt-2 pb-6 space-y-2 sm:px-3">
             {navItems.map((item) => (
               item.external ? (
                 <a
@@ -83,7 +85,7 @@ const Header = () => {
                   href={item.path}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50"
+                  className="block px-4 py-3 rounded-xl text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -92,7 +94,7 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50"
+                  className="block px-4 py-3 rounded-xl text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 transition-all duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
