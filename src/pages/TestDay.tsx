@@ -25,7 +25,7 @@ const TestDay = () => {
                 <h3 className="font-bold text-green-900 mb-2">必备证件 Checklist</h3>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex items-start"><CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5" /> Learner Permit (实习驾照) - 必须有效且在身边</li>
-                  <li className="flex items-start"><CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5" /> 车辆保险纸 (Insurance Disc) - 必须在有效期内且展示在挡风玻璃上</li>
+                  <li className="flex items-start"><CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5" /> 车辆保险纸 (Insurance Disc) - 必须在有效期内且展示在挡风玻璃上(如何是中国驾照购买的保险，先将保险驾照更新成L照)</li>
                   <li className="flex items-start"><CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5" /> 路税纸 (Tax Disc) - 必须在有效期内且展示在挡风玻璃上</li>
                   <li className="flex items-start"><CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5" /> NCT Disc (如果车龄超过4年) - 必须在有效期内</li>
                 </ul>
