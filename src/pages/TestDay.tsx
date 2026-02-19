@@ -12,7 +12,6 @@ const TestDay = () => {
       </div>
 
       <div className="space-y-12">
-        {/* Step 1: Before Departure */}
         <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
           <div className="bg-green-600 p-4 flex items-center">
             <ClipboardCheck className="text-white h-6 w-6 mr-3" />
@@ -25,7 +24,7 @@ const TestDay = () => {
                 <h3 className="font-bold text-green-900 mb-2">必备证件 Checklist</h3>
                 <ul className="space-y-2 text-sm text-gray-700">
                   <li className="flex items-start"><CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5" /> Learner Permit (实习驾照) - 必须有效且在身边</li>
-                  <li className="flex items-start"><CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5" /> 车辆保险纸 (Insurance Disc) - 必须在有效期内且展示在挡风玻璃上(如何是中国驾照购买的保险，先将保险驾照更新成L照)</li>
+                  <li className="flex items-start"><CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5" /> 车辆保险纸 (Insurance Disc) - 必须在有效期内且展示在挡风玻璃上</li>
                   <li className="flex items-start"><CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5" /> 路税纸 (Tax Disc) - 必须在有效期内且展示在挡风玻璃上</li>
                   <li className="flex items-start"><CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5" /> NCT Disc (如果车龄超过4年) - 必须在有效期内</li>
                 </ul>
@@ -39,6 +38,20 @@ const TestDay = () => {
                   <li className="flex items-start"><CheckCircle2 className="h-4 w-4 text-green-600 mr-2 mt-0.5" /> 车辆清洁 - 车内整洁，无异味</li>
                 </ul>
               </div>
+            </div>
+            <div className="mt-6 bg-amber-50 p-4 rounded-lg border-l-4 border-amber-400">
+              <h3 className="font-bold text-amber-900 mb-2 text-sm">车辆保险新规（自2026年3月9日起实施）</h3>
+              <p className="text-xs sm:text-sm text-amber-900 mb-2">
+                自2026年3月9日起，所有参加驾驶考试的学员必须出示证据，证明其对考试当天所使用的车辆已购买有效保险。以下任一形式均可作为证明：
+              </p>
+              <ul className="list-disc list-inside space-y-1 text-xs sm:text-sm text-amber-900">
+                <li>一份保险证书，明确列出该学员驾驶人已被保险覆盖。</li>
+                <li>如保险证书上未列出学员姓名，则需提供保险公司出具的电子邮件或正式信函（带抬头纸），说明该人员在考试当天、针对该车牌号码的车辆已获得保险保障。</li>
+                <li>如学员使用认可驾驶教练或驾校的车辆，则需提供该车辆的保险证书复印件（正反面），显示该车辆具备“用于驾驶考试”的适当保险；如保险证书上未明确显示此信息，则需附带一封带抬头纸的说明信函，明确该保险覆盖驾驶考试用途。</li>
+              </ul>
+              <p className="text-xs sm:text-sm text-red-700 mt-2">
+                此项新措施旨在降低驾驶考官与未投保驾驶人同车的风险。如果考官无法根据所提供的证明确认学员已投保，驾驶考试将不会进行，且考试费用将不予退还。
+              </p>
             </div>
           </div>
         </div>
