@@ -153,7 +153,6 @@ const Process = () => {
                       ))}
                     </div>
 
-                    {/* @ts-ignore */}
                     {step.registrationSteps && (
                       <div className="mt-6 bg-slate-50 p-5 rounded-xl border border-slate-100">
                         <h5 className="font-bold text-slate-700 text-sm mb-3 flex items-center">
@@ -161,7 +160,6 @@ const Process = () => {
                           报名流程参考
                         </h5>
                         <div className="space-y-2">
-                          {/* @ts-ignore */}
                           {step.registrationSteps.map((rStep, rIdx) => (
                             <div key={rIdx} className="flex text-sm text-slate-600">
                               <span className="font-mono text-slate-400 mr-2 select-none w-4 text-right">{rIdx + 1}.</span>

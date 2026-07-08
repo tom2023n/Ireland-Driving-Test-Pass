@@ -12,11 +12,13 @@ const Header = () => {
   const navItems = [
     { name: '首页', path: '/' },
     { name: '考驾照流程', path: '/process' },
+    { name: '理论考试', path: '/theory' },
     { name: '考试路线', path: '/test-routes' },
+    { name: '路考技巧', path: '/driving-test' },
     { name: '通关笔记', path: '/pass-notes' },
+    { name: '考试当天流程', path: '/test-day' },
     { name: '路标学习', path: 'https://tom2023n.github.io/my-single-page/', external: true },
     { name: '交规问答', path: 'https://tom2023n.github.io/rules-of-the-road/', external: true },
-    { name: '考试当天流程', path: '/test-day' },
   ];
 
   return (

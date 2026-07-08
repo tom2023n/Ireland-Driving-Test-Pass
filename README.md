@@ -23,8 +23,8 @@
 
 1.  **克隆项目**
     ```bash
-    git clone https://github.com/your-username/drivertest.git
-    cd drivertest
+    git clone https://github.com/tom2023n/Ireland-Driving-Test-Pass.git
+    cd Ireland-Driving-Test-Pass
     ```
 
 2.  **安装依赖**
@@ -44,32 +44,18 @@
 
 ## 📦 部署 (GitHub Pages)
 
-本项目已经预配置为适合 GitHub Pages 部署（使用 HashRouter 和相对路径）。
+本项目通过仓库内的 `docs/` 目录托管到 GitHub Pages（Settings → Pages → Source: `main` 分支 `/docs` 目录）。
 
-1.  **准备工作**
-    确保你已经将代码上传到 GitHub 仓库。
+`vite.config.ts` 已把构建输出目录设为 `docs/`（`outDir: 'docs'`）并开启 `emptyOutDir`，因此每次构建都会自动清理旧产物、只保留最新一套：
 
-2.  **安装部署工具**
-    ```bash
-    npm install gh-pages --save-dev
-    ```
+```bash
+npm run build      # 生成 docs/
+git add docs
+git commit -m "chore: rebuild site"
+git push           # 推送后 GitHub Pages 自动更新
+```
 
-3.  **配置部署脚本**
-    在 `package.json` 的 `scripts` 部分添加：
-    ```json
-    "scripts": {
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -d dist",
-      ...
-    }
-    ```
-
-4.  **执行部署**
-    ```bash
-    npm run deploy
-    ```
-
-> **注意**：本项目已配置 `vite.config.ts` 中的 `base: './'` 和 `HashRouter`，这确保了在 GitHub Pages 等静态托管服务上刷新页面不会出现 404 错误，且无需手动配置子路径。  
+> **注意**：本项目使用 `HashRouter` + `base: './'`，确保在 GitHub Pages 子路径下刷新页面不会 404，且无需手动配置子路径。  
 
 ## 📄 许可证
 
